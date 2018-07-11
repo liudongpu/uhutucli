@@ -24,6 +24,7 @@ code-push release-react [@config:project.projectName]-android android --dev fals
 
 
 codepush version 1.12.9-beta
+code-push login https://code-push.srnpr.com/
 code-push deployment clear <appName> <deploymentName>
 
 ## 生成key
