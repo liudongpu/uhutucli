@@ -120,7 +120,7 @@ var McommonRoot = /** @class */ (function () {
         return sReturn;
     };
     McommonRoot.prototype.inLogLevel = function (sLogType) {
-        logger.setLevel(sLogType);
+        //logger.setLevel(sLogType);
     };
     return McommonRoot;
 }());
