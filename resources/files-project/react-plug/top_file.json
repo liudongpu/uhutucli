@@ -17,7 +17,7 @@
     {
       "exec":"baseContentReplace",
       "set":{
-        "filePath":"[@config:appReact.workPath]/App.js",
+        "filePath":"[@config:appReact.workPath]/index.js",
      
         "replaceText":"",
         "contentInfo":["require(\"./uhutu_main\");"]
