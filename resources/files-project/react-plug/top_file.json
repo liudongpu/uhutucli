@@ -13,6 +13,15 @@
         "import MainPage from '[@config:file.reactStartPage]';",
         "AppRegistry.registerComponent('[@config:appReact.workName]', () => MainPage);"]
       }
+    },
+    {
+      "exec":"baseContentReplace",
+      "set":{
+        "filePath":"[@config:appReact.workPath]/App.js",
+     
+        "replaceText":"",
+        "contentInfo":["require(\"./uhutu_main\");"]
+      }
     }
   ],
   "android":

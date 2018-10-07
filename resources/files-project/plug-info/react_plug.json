@@ -59,7 +59,7 @@
     },
     "scrollable-tab-view": {
         "name": "react-native-scrollable-tab-view",
-        "version": "0.8.0"
+        "version": "git@github.com:happypancake/react-native-scrollable-tab-view.git"
     },
     "react_navigation": {
         "name": "react-navigation",
