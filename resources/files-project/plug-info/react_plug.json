@@ -39,7 +39,8 @@
     "code_push": {
         "name": "react-native-code-push",
         "version": "5.0.0-beta",
-        "json": "[@config:file.reactPlugPath]/code_push.json"
+        "json": "[@config:file.reactPlugPath]/code_push.json",
+        "disable": true
     },
     "rn_elements": {
         "name": "react-native-elements",
@@ -53,16 +54,16 @@
     },
     "vector_icons": {
         "name": "react-native-vector-icons",
-        "version": "4.3.0",
+        "version": "5.0.0",
         "json": "[@config:file.reactPlugPath]/vector_icons.json"
     },
     "scrollable-tab-view": {
         "name": "react-native-scrollable-tab-view",
-        "version": "0.7.4"
+        "version": "0.8.0"
     },
     "react_navigation": {
         "name": "react-navigation",
-        "version": "1.0.0-beta.11"
+        "version": "2.17.0"
     },
     "router_flux": {
         "name": "react-native-router-flux",
@@ -83,7 +84,7 @@
 
     "rn_realm": {
         "name": "realm",
-        "version": "1.10.3",
+        "version": "2.17.0",
         "json": "[@config:file.reactPlugPath]/rn_realm.json",
         "disable": true
     },
@@ -96,18 +97,18 @@
     },
     "rn_camera": {
         "name": "react-native-camera",
-        "version": "0.10.0",
+        "version": "1.3.0",
         "json": "[@config:file.reactPlugPath]/rn_camera.json"
     },
     "rn_image_picker": {
         "name": "react-native-image-picker",
-        "version": "0.26.4",
+        "version": "0.26.10",
         "json": "[@config:file.reactPlugPath]/rn_image_picker.json"
     },
 
     "rn_date_picker": {
         "name": "react-native-datepicker",
-        "version": "1.6.0"
+        "version": "1.7.2"
     },
 
     "rn_mipush": {
@@ -138,8 +139,13 @@
     },
     "rn_qrcode": {
         "name": "react-native-qrcode",
-        "version": "0.2.5",
+        "version": "0.2.7",
         "disable": true
+
+    },
+    "rn_babel_runtime": {
+        "name": "@babel/runtime",
+        "version": "7.1.2"
 
     }
 
