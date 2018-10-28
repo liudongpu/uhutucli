@@ -63,7 +63,7 @@
     },
     "react_navigation": {
         "name": "react-navigation",
-        "version": "2.18.0"
+        "version": "1.0.3"
     },
     "router_flux": {
         "name": "react-native-router-flux",
