@@ -2,6 +2,10 @@
 
 * android打包 cd ./react[@config:project.projectName]/android && ./gradlew assembleRelease
 
+
+android更新编译：
+react-native bundle  --platform android --dev false --entry-file index.js  --bundle-output ./build/android/index.android.jsbundle  --assets-dest ./build/android/
+
 ### 更新
 
 * ios更新
