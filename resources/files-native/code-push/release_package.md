@@ -16,6 +16,9 @@ cd ~/react/[@config:project.projectName]/react[@config:project.projectName]/ && 
 react-native bundle  --platform ios --dev false --reset-cache --entry-file index.js  --bundle-output ./build/android/index.ios.jsbundle  --assets-dest ./build/ios/
 
 
+
+
+
 ### 更新
 
 * ios更新
