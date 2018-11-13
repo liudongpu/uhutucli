@@ -4,7 +4,17 @@
 
 
 android更新编译：
-react-native bundle  --platform android --dev false --entry-file index.js  --bundle-output ./build/android/index.android.jsbundle  --assets-dest ./build/android/
+
+cd ~/react/[@config:project.projectName]/react[@config:project.projectName]/ && mkdir -p build/android
+react-native bundle  --platform android --dev false --reset-cache --entry-file index.js  --bundle-output ./build/android/index.android.jsbundle  --assets-dest ./build/android/
+
+zip –q –r ./build/android.zip ./build/android/
+
+
+ios更新编译：
+cd ~/react/[@config:project.projectName]/react[@config:project.projectName]/ && mkdir -p build/ios
+react-native bundle  --platform ios --dev false --reset-cache --entry-file index.js  --bundle-output ./build/android/index.ios.jsbundle  --assets-dest ./build/ios/
+
 
 ### 更新
 
