@@ -6,17 +6,21 @@
 android更新编译：
 
 cd ~/react/[@config:project.projectName]/react[@config:project.projectName]/ && mkdir -p build/android
+rm -rf ~/react/[@config:project.projectName]/react[@config:project.projectName]/build/android/*
+
 react-native bundle  --platform android --dev false --reset-cache --entry-file index.js  --bundle-output ./build/android/index.android.jsbundle  --assets-dest ./build/android/
 
-zip –q –r ./build/android.zip ./build/android/
+cd build/android/ && zip -r '../bundle_android_'`date +%Y%m%d` ./
 
 
 ios更新编译：
 cd ~/react/[@config:project.projectName]/react[@config:project.projectName]/ && mkdir -p build/ios
+rm -rf ~/react/[@config:project.projectName]/react[@config:project.projectName]/build/ios/*
+
 react-native bundle  --platform ios --dev false --reset-cache --entry-file index.js  --bundle-output ./build/ios/index.ios.jsbundle  --assets-dest ./build/ios/
 
 
-
+cd build/ios/ && zip -r '../bundle_ios_'`date +%Y%m%d` ./
 
 
 ### 更新
