@@ -10,7 +10,7 @@ rm -rf ~/react/[@config:project.projectName]/react[@config:project.projectName]/
 
 react-native bundle  --platform android --dev false --reset-cache --entry-file index.js  --bundle-output ./build/android/index.android.jsbundle  --assets-dest ./build/android/
 
-cd build/android/ && zip -r '../bundle_android_'`date +%y%m%d` ./
+cd build/android/ && zip -r '../bundle/android_'`date +%y%m%d` ./
 
 
 ios更新编译：
@@ -20,7 +20,7 @@ rm -rf ~/react/[@config:project.projectName]/react[@config:project.projectName]/
 react-native bundle  --platform ios --dev false --reset-cache --entry-file index.js  --bundle-output ./build/ios/index.ios.jsbundle  --assets-dest ./build/ios/
 
 
-cd build/ios/ && zip -r '../bundle_ios_'`date +%y%m%d` ./
+cd build/ios/ && zip -r '../bundle/ios_'`date +%y%m%d` ./
 
 
 ### 更新
