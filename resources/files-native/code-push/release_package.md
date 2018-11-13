@@ -3,24 +3,29 @@
 * android打包 cd ./react[@config:project.projectName]/android && ./gradlew assembleRelease
 
 
+
+cd ~/react/[@config:project.projectName]/react[@config:project.projectName]/ && mkdir -p build/android && mkdir -p build/ios && mkdir -p build/abc
+
 android更新编译：
 
-cd ~/react/[@config:project.projectName]/react[@config:project.projectName]/ && mkdir -p build/android
-rm -rf ~/react/[@config:project.projectName]/react[@config:project.projectName]/build/android/*
+
+rm -rf build/android/*
 
 react-native bundle  --platform android --dev false --reset-cache --entry-file index.js  --bundle-output ./build/android/index.android.jsbundle  --assets-dest ./build/android/
 
-cd build/android/ && zip -r '../bundle/android_'`date +%y%m%d` ./
+cd build/android/ 
+zip -r '../abc/android_'`date +%y%m%d` ./
 
 
 ios更新编译：
-cd ~/react/[@config:project.projectName]/react[@config:project.projectName]/ && mkdir -p build/ios
-rm -rf ~/react/[@config:project.projectName]/react[@config:project.projectName]/build/ios/*
+
+rm -rf build/ios/*
 
 react-native bundle  --platform ios --dev false --reset-cache --entry-file index.js  --bundle-output ./build/ios/index.ios.jsbundle  --assets-dest ./build/ios/
 
 
-cd build/ios/ && zip -r '../bundle/ios_'`date +%y%m%d` ./
+cd build/ios/ 
+zip -r '../abc/ios_'`date +%y%m%d` ./
 
 
 ### 更新
