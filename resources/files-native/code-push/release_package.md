@@ -14,7 +14,7 @@ rm -rf build/android/*
 react-native bundle  --platform android --dev false --reset-cache --entry-file index.js  --bundle-output ./build/android/index.android.jsbundle  --assets-dest ./build/android/
 
 cd build/android/ 
-zip -r '../abc/android_'`date +%y%m%d` ./
+zip -r '../abc/android-'`date +%y%m%d` ./
 
 
 ios更新编译：
@@ -25,7 +25,7 @@ react-native bundle  --platform ios --dev false --reset-cache --entry-file index
 
 
 cd build/ios/ 
-zip -r '../abc/ios_'`date +%y%m%d` ./
+zip -r '../abc/ios-'`date +%y%m%d` ./
 
 
 ### 更新
