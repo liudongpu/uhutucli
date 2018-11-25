@@ -26,6 +26,25 @@
         "targetPath": "[@config:file.reactIosWork]/[@config:appReact.workName]/Images.xcassets/AppIcon.appiconset/Contents.json"
 
       }
+    },
+    {
+      "exec": "baseContentReplace",
+      "set": {
+
+        "filePath": "[@config:file.reactIosWork]/[@config:appReact.workName]/Base.lproj/LaunchScreen.xib",
+        "withText": "[@config:project.displayName]",
+        "replaceText": ["[@config:appReact.workName]"]
+      }
+    }
+    ,
+    {
+      "exec": "baseContentReplace",
+      "set": {
+
+        "filePath": "[@config:file.reactIosWork]/[@config:appReact.workName]/Base.lproj/LaunchScreen.xib",
+        "withText": "Powered by www.yinxl.com",
+        "replaceText": ["Powered by React Native"]
+      }
     }
   ]
 
