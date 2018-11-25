@@ -251,10 +251,17 @@
       "set": {
         "name": "react_note_plug_top_ginkgo_delegate_include",
         "filePath": "[@config:file.reactIosWork]/[@config:appReact.workName]/AppDelegate.h",
-        "contentInfo": ["#import <GinkgoIosVideo/VideoRoomView.h>"
-        ],
+        "contentInfo": ["#import <GinkgoIosVideo/VideoRoomView.h>"],
         "noteType": 1,
         "withText": "UIKit\\.h\\>"
+
+      }
+    }, {
+      "exec": "baseFileOption",
+      "set": {
+        "optType": 153303,
+        "filePath": "[@config:define.resourcePath]/files-native/rn-ginkgo/AppDelegate.m",
+        "targetPath": "[@config:file.reactIosWork]/[@config:appReact.workName]/AppDelegate.m"
 
       }
     }
