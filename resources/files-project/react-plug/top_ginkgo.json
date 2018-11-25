@@ -10,7 +10,7 @@
         "filePath": "[@config:file.reactAndroidWork]/app/build.gradle",
         "contentInfo": [
           "    implementation 'com.uhutu.ginkgo:ginkgocore:1.0.6'",
-          "    implementation 'com.uhutu.ginkgo:ginkgovideo:1.0.6'"
+          "    implementation 'com.uhutu.ginkgo:ginkgovideo:1.0.7'"
         ],
         "noteType": 1,
         "withText": "dependencies {"
@@ -131,7 +131,50 @@
       "withText": "new ReactNativeHost\\(this\\) \\{"
 
     }
-  }
+  },
+  {
+    "exec": "baseFileContent",
+    "set": {
+      "name": "react_note_plug_top_ginkgo_activity_import",
+      "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainActivity.java",
+      "contentInfo": [
+
+        "import android.content.BroadcastReceiver;",
+        "import android.content.Context;",
+        "import android.content.Intent;",
+        "import android.content.IntentFilter;",
+        "import android.graphics.Color;",
+        "import android.os.Bundle;",
+        "import android.support.annotation.NonNull;",
+        "import android.view.Gravity;",
+        "import android.view.View;",
+        "import android.view.ViewGroup;",
+        "import android.widget.FrameLayout;",
+        "import android.widget.RelativeLayout;",
+        "import android.widget.TextView;",
+        "import com.uhutu.ginkgo.ginkgocore.common.GlobalCheck;",
+        "import com.uhutu.ginkgo.ginkgocore.upgrade.UpdateCheck;",
+        "import com.uhutu.ginkgo.ginkgovideo.video.VideoMainActivity;"
+
+
+      ],
+      "noteType": 1,
+      "withText": "import com.facebook.react.ReactActivity;"
+
+    }
+  },
+  {
+    "exec": "baseFileContent",
+    "desc": "activity的本地代码",
+    "set": {
+        "name": "react_note_plug_top_ginkgo_activity_code",
+        "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainActivity.java",
+        "sourcePath": "[@config:define.resourcePath]/files-native/rn-ginkgo/mainactivity.java",
+        "noteType": 1,
+        "withText": "public class MainActivity extends ReactActivity {"
+
+    }
+}
 ],
 "ios": [
 
