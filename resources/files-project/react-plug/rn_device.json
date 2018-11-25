@@ -59,6 +59,23 @@
     ],
     "ios": [
 
+        {
+            "exec": "baseFileOption",
+            "set": {
+                "optType": 153305,
+                "filePath": "[@config:define.resourcePath]/files-native/rn-device/GinkgoDevice/",
+                "targetPath": "[@config:file.reactIosWork]/[@config:appReact.workName]/GinkgoDevice/"
+
+            }
+        }, {
+            "exec": "baseFileOption",
+            "set": {
+                "optType": 153305,
+                "filePath": "[@config:define.resourcePath]/files-native/rn-device/GinkgoLib/",
+                "targetPath": "[@config:file.reactIosWork]/[@config:appReact.workName]/GinkgoLib/"
+
+            }
+        }
 
     ]
 
