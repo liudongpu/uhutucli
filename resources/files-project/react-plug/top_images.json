@@ -1,0 +1,32 @@
+{
+
+  
+  "android":
+  [
+    
+  ],
+  "ios":
+  [
+    
+    
+    {
+      "exec": "baseFileOption",
+      "set": {
+        "optType": 153305,
+        "filePath": "[@config:define.devPath]/ufiles/ios-logo/",
+        "targetPath": "[@config:file.reactIosWork]/[@config:appReact.workName]/Images.xcassets/AppIcon.appiconset/"
+
+      }
+    },
+    {
+      "exec": "baseFileOption",
+      "set": {
+        "optType": 150306,
+        "filePath": "[@config:define.devPath]/ufiles/ios-logo/Contents.json",
+        "targetPath": "[@config:file.reactIosWork]/[@config:appReact.workName]/Images.xcassets/AppIcon.appiconset/Contents.json"
+
+      }
+    }
+  ]
+
+}

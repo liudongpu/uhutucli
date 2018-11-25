@@ -24,6 +24,10 @@
         "name": "top-ginkgo",
         "json": "[@config:file.reactPlugPath]/top_ginkgo.json"
     },
+    "top_images": {
+        "name": "top-images",
+        "json": "[@config:file.reactPlugPath]/top_images.json"
+    },
 
     "rn_voip": {
         "name": "rn-voip",
