@@ -68,117 +68,141 @@
           "        sourceCompatibility = '1.8'",
           "        targetCompatibility = '1.8'",
           "    }"
-        
-      ],
-      "noteType": 1,
-      "withText": "buildToolsVersion rootProject.ext.buildToolsVersion"
 
-    }
-  },
-  {
-    "exec": "baseFileContent",
-    "set": {
-      "name": "react_note_plug_top_ginkgo_maven",
-      "filePath": "[@config:file.reactAndroidWork]/build.gradle",
-      "contentInfo": ["        maven { ",
-        "            url 'https://repo.rdc.aliyun.com/repository/4932-release-24zXdM/' ",
-        "            credentials { ",
-        "                username 'XTHvad' ",
-        "                password 'ehcFiFJ41b'",
-        "            }",
-        "        }"
-      ],
-      "noteType": 1,
-      "withText": "mavenLocal\\(\\)"
+        ],
+        "noteType": 1,
+        "withText": "buildToolsVersion rootProject.ext.buildToolsVersion"
 
-    }
-  },
-  {
-    "exec": "baseFileContent",
-    "set": {
-      "name": "react_note_plug_top_ginkgo_application_import",
-      "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainApplication.java",
-      "contentInfo": ["import com.uhutu.ginkgo.ginkgocore.common.GlobalBase;",
-        "import com.uhutu.ginkgo.ginkgocore.upgrade.UpdateCheck;"
-      ],
-      "noteType": 1,
-      "withText": "import android.app.Application;"
+      }
+    },
+    {
+      "exec": "baseFileContent",
+      "set": {
+        "name": "react_note_plug_top_ginkgo_maven",
+        "filePath": "[@config:file.reactAndroidWork]/build.gradle",
+        "contentInfo": ["        maven { ",
+          "            url 'https://repo.rdc.aliyun.com/repository/4932-release-24zXdM/' ",
+          "            credentials { ",
+          "                username 'XTHvad' ",
+          "                password 'ehcFiFJ41b'",
+          "            }",
+          "        }"
+        ],
+        "noteType": 1,
+        "withText": "mavenLocal\\(\\)"
 
-    }
-  },
-  {
-    "exec": "baseFileContent",
-    "set": {
-      "name": "react_note_plug_top_ginkgo_application_initapp",
-      "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainApplication.java",
-      "contentInfo": ["    GlobalBase.getInstance().initApp(this);"],
-      "noteType": 1,
-      "withText": "super.onCreate\\(\\);"
+      }
+    },
+    {
+      "exec": "baseFileContent",
+      "set": {
+        "name": "react_note_plug_top_ginkgo_application_import",
+        "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainApplication.java",
+        "contentInfo": ["import com.uhutu.ginkgo.ginkgocore.common.GlobalBase;",
+          "import com.uhutu.ginkgo.ginkgocore.upgrade.UpdateCheck;",
 
-    }
-  },
-  {
-    "exec": "baseFileContent",
-    "set": {
-      "name": "react_note_plug_top_ginkgo_application_jsbundle",
-      "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainApplication.java",
-      "contentInfo": ["    @Override",
-        "    protected String getJSBundleFile(){",
-        "      return new UpdateCheck().upBundleFile(this.getApplication());",
-        "    }"
-      ],
-      "noteType": 1,
-      "withText": "new ReactNativeHost\\(this\\) \\{"
+          "import com.[@config:appReact.workName].miniapp.MiniappManagerPackage;"
+        ],
+        "noteType": 1,
+        "withText": "import android.app.Application;"
 
-    }
-  },
-  {
-    "exec": "baseFileContent",
-    "set": {
-      "name": "react_note_plug_top_ginkgo_activity_import",
-      "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainActivity.java",
-      "contentInfo": [
+      }
+    },
+    {
+      "exec": "baseFileContent",
+      "set": {
+        "name": "react_note_plug_top_ginkgo_application_initapp",
+        "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainApplication.java",
+        "contentInfo": ["    GlobalBase.getInstance().initApp(this);"],
+        "noteType": 1,
+        "withText": "super.onCreate\\(\\);"
 
-        "import android.content.BroadcastReceiver;",
-        "import android.content.Context;",
-        "import android.content.Intent;",
-        "import android.content.IntentFilter;",
-        "import android.graphics.Color;",
-        "import android.os.Bundle;",
-        "import android.support.annotation.NonNull;",
-        "import android.view.Gravity;",
-        "import android.view.View;",
-        "import android.view.ViewGroup;",
-        "import android.widget.FrameLayout;",
-        "import android.widget.RelativeLayout;",
-        "import android.widget.TextView;",
-        "import com.uhutu.ginkgo.ginkgocore.common.GlobalCheck;",
-        "import com.uhutu.ginkgo.ginkgocore.upgrade.UpdateCheck;",
-        "import com.uhutu.ginkgo.ginkgovideo.video.VideoMainActivity;"
+      }
+    },
+    {
+      "exec": "baseFileContent",
+      "set": {
+        "name": "react_note_plug_top_ginkgo_application_jsbundle",
+        "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainApplication.java",
+        "contentInfo": ["    @Override",
+          "    protected String getJSBundleFile(){",
+          "      return new UpdateCheck().upBundleFile(this.getApplication());",
+          "    }"
+        ],
+        "noteType": 1,
+        "withText": "new ReactNativeHost\\(this\\) \\{"
+
+      }
+    },
+    {
+      "exec": "baseFileContent",
+      "set": {
+        "name": "react_note_plug_top_ginkgo_activity_import",
+        "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainActivity.java",
+        "contentInfo": [
+
+          "import android.content.BroadcastReceiver;",
+          "import android.content.Context;",
+          "import android.content.Intent;",
+          "import android.content.IntentFilter;",
+          "import android.graphics.Color;",
+          "import android.os.Bundle;",
+          "import android.support.annotation.NonNull;",
+          "import android.view.Gravity;",
+          "import android.view.View;",
+          "import android.view.ViewGroup;",
+          "import android.widget.FrameLayout;",
+          "import android.widget.RelativeLayout;",
+          "import android.widget.TextView;",
+          "import com.uhutu.ginkgo.ginkgocore.common.GlobalCheck;",
+          "import com.uhutu.ginkgo.ginkgocore.upgrade.UpdateCheck;",
+          "import com.uhutu.ginkgo.ginkgovideo.video.VideoMainActivity;",
+          "import com.[@config:appReact.workName].miniapp.MiniappManagerPackage;"
 
 
-      ],
-      "noteType": 1,
-      "withText": "import com.facebook.react.ReactActivity;"
+        ],
+        "noteType": 1,
+        "withText": "import com.facebook.react.ReactActivity;"
 
-    }
-  },
-  {
-    "exec": "baseFileContent",
-    "desc": "activity的本地代码",
-    "set": {
+      }
+    },
+    {
+      "exec": "baseFileContent",
+      "desc": "activity的本地代码",
+      "set": {
         "name": "react_note_plug_top_ginkgo_activity_code",
         "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainActivity.java",
         "sourcePath": "[@config:define.resourcePath]/files-native/rn-ginkgo/mainactivity.java",
         "noteType": 1,
         "withText": "public class MainActivity extends ReactActivity {"
 
+      }
+    },
+    {
+      "exec": "baseFileOption",
+      "set": {
+        "optType": 153304,
+        "filePath": "[@config:define.resourcePath]/files-native/rn-device/miniapp/",
+        "targetPath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/miniapp/"
+
+      }
+    },
+    {
+      "exec": "baseFileContent",
+      "set": {
+        "name": "react_note_plug_top_ginkgo_application_device",
+        "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainApplication.java",
+        "contentInfo": ["          new MiniappManagerPackage(),"],
+        "noteType": 1,
+        "withText": "new MainReactPackage\\(\\)\\,"
+
+      }
     }
-}
-],
-"ios": [
+
+  ],
+  "ios": [
 
 
-]
+  ]
 
 }

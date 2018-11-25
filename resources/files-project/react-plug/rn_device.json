@@ -7,8 +7,8 @@
                 "name": "react_note_plug_rn_device_import",
                 "filePath": "[@config:file.reactAndroidWork]/app/build.gradle",
                 "contentInfo": [
-                    "    implementation 'com.uhutu.ginkgo:ginkgodevice:1.0.6'"
-                   
+                    "    implementation 'com.uhutu.ginkgo:ginkgodevice:1.0.8'"
+
                 ],
                 "noteType": 1,
                 "withText": "dependencies {"
@@ -18,12 +18,43 @@
         {
             "exec": "baseFileOption",
             "set": {
-              "optType": 153304,
-              "filePath": "[@config:define.resourcePath]/files-native/rn-device/device/",
-              "targetPath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/device/"
-      
+                "optType": 153304,
+                "filePath": "[@config:define.resourcePath]/files-native/rn-device/device/",
+                "targetPath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/device/"
+
             }
-          }
+        },
+        {
+            "exec": "baseFileOption",
+            "set": {
+                "optType": 153304,
+                "filePath": "[@config:define.resourcePath]/files-native/rn-device/tooth/",
+                "targetPath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/tooth/"
+
+            }
+        },
+        {
+            "exec": "baseFileContent",
+            "set": {
+                "name": "react_note_plug_rn_device_application_import",
+                "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainApplication.java",
+                "contentInfo": ["import com.[@config:appReact.workName].tooth.DeviceReactPackage;"],
+                "noteType": 1,
+                "withText": "import android.app.Application;"
+
+            }
+        },
+        {
+            "exec": "baseFileContent",
+            "set": {
+                "name": "react_note_plug_rn_device_application_device",
+                "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainApplication.java",
+                "contentInfo": ["          new DeviceReactPackage(),"],
+                "noteType": 1,
+                "withText": "new MainReactPackage\\(\\)\\,"
+
+            }
+        }
 
     ],
     "ios": [
