@@ -3,7 +3,65 @@
   
   "android":
   [
-    
+    {
+      "exec": "baseFileOption",
+      "set": {
+        "optType": 153305,
+        "filePath": "[@config:define.devPath]/ufiles/android-logo/mipmap-hdpi/",
+        "targetPath": "[@config:file.reactAndroidWork]/app/src/main/res/mipmap-hdpi/"
+
+      }
+    },
+    {
+      "exec": "baseFileOption",
+      "set": {
+        "optType": 153305,
+        "filePath": "[@config:define.devPath]/ufiles/android-logo/mipmap-ldpi/",
+        "targetPath": "[@config:file.reactAndroidWork]/app/src/main/res/mipmap-ldpi/"
+
+      }
+    },
+    {
+      "exec": "baseFileOption",
+      "set": {
+        "optType": 153305,
+        "filePath": "[@config:define.devPath]/ufiles/android-logo/mipmap-mdpi/",
+        "targetPath": "[@config:file.reactAndroidWork]/app/src/main/res/mipmap-mdpi/"
+
+      }
+    },{
+      "exec": "baseFileOption",
+      "set": {
+        "optType": 153305,
+        "filePath": "[@config:define.devPath]/ufiles/android-logo/mipmap-xhdpi/",
+        "targetPath": "[@config:file.reactAndroidWork]/app/src/main/res/mipmap-xhdpi/"
+
+      }
+    },{
+      "exec": "baseFileOption",
+      "set": {
+        "optType": 153305,
+        "filePath": "[@config:define.devPath]/ufiles/android-logo/mipmap-xxhdpi/",
+        "targetPath": "[@config:file.reactAndroidWork]/app/src/main/res/mipmap-xxhdpi/"
+
+      }
+    },{
+      "exec": "baseFileOption",
+      "set": {
+        "optType": 153305,
+        "filePath": "[@config:define.devPath]/ufiles/android-logo/mipmap-xxxhdpi/",
+        "targetPath": "[@config:file.reactAndroidWork]/app/src/main/res/mipmap-xxxhdpi/"
+
+      }
+    },{
+      "exec": "baseFileOption",
+      "set": {
+        "optType": 153305,
+        "filePath": "[@config:define.devPath]/ufiles/android-logo/demos/",
+        "targetPath": "[@config:file.reactAndroidWork]/app/src/main/res/demos/"
+
+      }
+    }
   ],
   "ios":
   [

@@ -16,6 +16,16 @@
         "withText": "dependencies {"
 
       }
+    }
+    ,
+    {
+      "exec": "baseContentReplace",
+      "set": {
+
+        "filePath": "[@config:file.reactAndroidWork]/app/src/main/AndroidManifest.xml",
+        "withText": "android:icon=\"@mipmap/product_logo\"",
+        "replaceText": ["android:icon=\"@mipmap/ic_launcher\""]
+      }
     },
     {
       "exec": "baseFileContent",
@@ -25,10 +35,24 @@
         "contentInfo": [
           "        debug {",
           "            applicationIdSuffix \".localdebug\"",
+          "            manifestPlaceholders = [ginkgo_fest_app_icon: \"@demos/localdebug\"]",
           "        }"
         ],
         "noteType": 1,
         "withText": "buildTypes {"
+
+      }
+    },
+    {
+      "exec": "baseFileContent",
+      "set": {
+        "name": "react_note_plug_top_ginkgo_build_release",
+        "filePath": "[@config:file.reactAndroidWork]/app/build.gradle",
+        "contentInfo": [
+          "            manifestPlaceholders = [ginkgo_fest_app_icon: \"@mipmap/product_logo\"]"
+        ],
+        "noteType": 1,
+        "withText": "release {"
 
       }
     },
