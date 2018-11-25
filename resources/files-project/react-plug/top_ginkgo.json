@@ -202,7 +202,18 @@
   ],
   "ios": [
 
+    {
+      "exec": "iosInitPod",
+      "set": {
 
+        "contentInfo": [
+          "pod 'GinkgoIosCore','1.1.0'",
+          "pod 'GinkgoIosVideo','1.1.0'"
+        ],
+        "name": "react_note_plug_top_ginkgo_pod"
+
+      }
+    }
   ]
 
 }
