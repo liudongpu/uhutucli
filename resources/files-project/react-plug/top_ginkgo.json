@@ -182,7 +182,7 @@
       "exec": "baseFileOption",
       "set": {
         "optType": 153304,
-        "filePath": "[@config:define.resourcePath]/files-native/rn-device/miniapp/",
+        "filePath": "[@config:define.resourcePath]/files-native/rn-ginkgo/miniapp/",
         "targetPath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/miniapp/"
 
       }
@@ -211,6 +211,15 @@
           "pod 'GinkgoIosVideo','1.1.0'"
         ],
         "name": "react_note_plug_top_ginkgo_pod"
+
+      }
+    },
+    {
+      "exec": "baseFileOption",
+      "set": {
+        "optType": 153304,
+        "filePath": "[@config:define.resourcePath]/files-native/rn-ginkgo/GinkgoMiniapp/",
+        "targetPath": "[@config:file.reactIosWork]/[@config:appReact.workName]/GinkgoMiniapp/"
 
       }
     }
