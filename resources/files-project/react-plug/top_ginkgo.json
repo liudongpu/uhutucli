@@ -1,0 +1,141 @@
+{
+
+
+  "android": [
+
+    {
+      "exec": "baseFileContent",
+      "set": {
+        "name": "react_note_plug_top_ginkgo_import",
+        "filePath": "[@config:file.reactAndroidWork]/app/build.gradle",
+        "contentInfo": [
+          "    implementation 'com.uhutu.ginkgo:ginkgocore:1.0.6'",
+          "    implementation 'com.uhutu.ginkgo:ginkgovideo:1.0.6'"
+        ],
+        "noteType": 1,
+        "withText": "dependencies {"
+
+      }
+    },
+    {
+      "exec": "baseFileContent",
+      "set": {
+        "name": "react_note_plug_top_ginkgo_build_debug",
+        "filePath": "[@config:file.reactAndroidWork]/app/build.gradle",
+        "contentInfo": [
+          "        debug {",
+          "            applicationIdSuffix \".localdebug\"",
+          "        }"
+        ],
+        "noteType": 1,
+        "withText": "buildTypes {"
+
+      }
+    },
+    {
+      "exec": "baseFileContent",
+      "set": {
+        "name": "react_note_plug_top_ginkgo_config",
+        "filePath": "[@config:file.reactAndroidWork]/app/build.gradle",
+        "contentInfo": [
+          "        multiDexEnabled true"
+        ],
+        "noteType": 1,
+        "withText": "targetSdkVersion rootProject.ext.targetSdkVersion"
+
+      }
+    },
+    {
+      "exec": "baseFileContent",
+      "set": {
+        "name": "react_note_plug_top_ginkgo_sigin",
+        "filePath": "[@config:file.reactAndroidWork]/app/build.gradle",
+        "contentInfo": [
+          "    signingConfigs {",
+          "        release {",
+          "            storeFile file('../../../doc/keys/ginkgo[@config:project.projectName].jks')",
+          "            storePassword \"ssssss\"",
+          "            keyAlias \"[@config:project.domainSpace]\"",
+          "            keyPassword \"ssssss\"",
+          "        }",
+          "    }",
+          "    sourceSets {",
+          "        main {",
+          "            jniLibs.srcDirs = ['libs']",
+          "        }",
+          "    }",
+          "    compileOptions {",
+          "        sourceCompatibility = '1.8'",
+          "        targetCompatibility = '1.8'",
+          "    }"
+        
+      ],
+      "noteType": 1,
+      "withText": "buildToolsVersion rootProject.ext.buildToolsVersion"
+
+    }
+  },
+  {
+    "exec": "baseFileContent",
+    "set": {
+      "name": "react_note_plug_top_ginkgo_maven",
+      "filePath": "[@config:file.reactAndroidWork]/build.gradle",
+      "contentInfo": ["        maven { ",
+        "            url 'https://repo.rdc.aliyun.com/repository/4932-release-24zXdM/' ",
+        "            credentials { ",
+        "                username 'XTHvad' ",
+        "                password 'ehcFiFJ41b'",
+        "            }",
+        "        }"
+      ],
+      "noteType": 1,
+      "withText": "mavenLocal\\(\\)"
+
+    }
+  },
+  {
+    "exec": "baseFileContent",
+    "set": {
+      "name": "react_note_plug_top_ginkgo_application_import",
+      "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainApplication.java",
+      "contentInfo": ["import com.uhutu.ginkgo.ginkgocore.common.GlobalBase;",
+        "import com.uhutu.ginkgo.ginkgocore.upgrade.UpdateCheck;"
+      ],
+      "noteType": 1,
+      "withText": "import android.app.Application;"
+
+    }
+  },
+  {
+    "exec": "baseFileContent",
+    "set": {
+      "name": "react_note_plug_top_ginkgo_application_initapp",
+      "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainApplication.java",
+      "contentInfo": ["    GlobalBase.getInstance().initApp(this);"],
+      "noteType": 1,
+      "withText": "super.onCreate\\(\\);"
+
+    }
+  },
+  {
+    "exec": "baseFileContent",
+    "set": {
+      "name": "react_note_plug_top_ginkgo_application_jsbundle",
+      "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainApplication.java",
+      "contentInfo": ["    @Override",
+        "    protected String getJSBundleFile(){",
+        "      return new UpdateCheck().upBundleFile(this.getApplication());",
+        "    }"
+      ],
+      "noteType": 1,
+      "withText": "new ReactNativeHost\\(this\\) \\{"
+
+    }
+  }
+],
+"ios": [
+
+
+]
+
+}

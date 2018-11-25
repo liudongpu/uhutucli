@@ -20,6 +20,10 @@
         "name": "top-file",
         "json": "[@config:file.reactPlugPath]/top_file.json"
     },
+    "top_ginkgo": {
+        "name": "top-ginkgo",
+        "json": "[@config:file.reactPlugPath]/top_ginkgo.json"
+    },
 
     "rn_voip": {
         "name": "rn-voip",
@@ -145,7 +149,9 @@
     },
     "rn_babel_runtime": {
         "name": "@babel/runtime",
-        "version": "7.1.2"
+        "version": "7.1.2",
+        "disable": true
+
 
     }
 
