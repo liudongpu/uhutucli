@@ -213,6 +213,19 @@ var PlugProcess = /** @class */ (function () {
                         });
                     }
                     break;
+                //异步模式复制文件夹 文件存在则不复制
+                case 153305:
+                    {
+                        var aDir = CommonUtil.utilsIo.listDir(oSet.filePath);
+                        aDir.forEach(function (fItem) {
+                            var sFileName = CommonUtil.utilsIo.upFileName(fItem);
+                            var sTargetName = CommonUtil.utilsIo.pathJoin(oSet.targetPath, sFileName);
+                            if (!CommonUtil.utilsIo.flagExist(sTargetName)) {
+                                CommonUtil.utilsIo.copyFileAsync(fItem, sTargetName);
+                            }
+                        });
+                    }
+                    break;
                 default:
                     CommonRoot.logError(930312008, oSet.optType.toString());
                     break;

@@ -222,6 +222,15 @@
         "targetPath": "[@config:file.reactIosWork]/[@config:appReact.workName]/GinkgoMiniapp/"
 
       }
+    },
+    {
+      "exec": "baseFileOption",
+      "set": {
+        "optType": 153305,
+        "filePath": "[@config:define.resourcePath]/files-native/rn-ginkgo/GinkgoImage/",
+        "targetPath": "[@config:file.reactIosWork]/[@config:appReact.workName]/GinkgoImage/"
+
+      }
     }
   ]
 
