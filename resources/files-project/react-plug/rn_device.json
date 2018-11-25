@@ -1,0 +1,34 @@
+{
+
+
+    "android": [{
+            "exec": "baseFileContent",
+            "set": {
+                "name": "react_note_plug_rn_device_import",
+                "filePath": "[@config:file.reactAndroidWork]/app/build.gradle",
+                "contentInfo": [
+                    "    implementation 'com.uhutu.ginkgo:ginkgodevice:1.0.6'"
+                   
+                ],
+                "noteType": 1,
+                "withText": "dependencies {"
+
+            }
+        },
+        {
+            "exec": "baseFileOption",
+            "set": {
+              "optType": 153304,
+              "filePath": "[@config:define.resourcePath]/files-native/rn-device/device/",
+              "targetPath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/device/"
+      
+            }
+          }
+
+    ],
+    "ios": [
+
+
+    ]
+
+}

@@ -30,6 +30,13 @@
         "json": "[@config:file.reactPlugPath]/rn_voip.json",
         "disable": true
     },
+
+    "rn_device": {
+        "name": "rn-device",
+        "json": "[@config:file.reactPlugPath]/rn_device.json",
+        "disable": true
+    },
+
     "simple_react": {
         "name": "simple-react",
         "json": "[@config:file.reactPlugPath]/simple_react.json",

@@ -204,6 +204,18 @@ var PlugProcess = /** @class */ (function () {
                     var sNewContent = LoadConfig.formatConfigString(sContent, oLocalConfig);
                     CommonUtil.utilsIo.writeFile(oSet.targetPath, sNewContent);
                     break;
+                //复制文件夹 并且进行config的替换
+                case 153304:
+                    {
+                        var aDir = CommonUtil.utilsIo.listDir(oSet.filePath);
+                        aDir.forEach(function (fItem) {
+                            var sContent = CommonUtil.utilsIo.readFile(fItem);
+                            var sNewContent = LoadConfig.formatConfigString(sContent, oLocalConfig);
+                            var sFileName = CommonUtil.utilsIo.upFileName(fItem);
+                            CommonUtil.utilsIo.writeFile(CommonUtil.utilsIo.pathJoin(oSet.targetPath, sFileName), sNewContent);
+                        });
+                    }
+                    break;
                 default:
                     CommonRoot.logError(930312008, oSet.optType.toString());
                     break;

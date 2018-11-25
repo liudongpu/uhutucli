@@ -18,6 +18,11 @@ class MUtilsIo {
         return glob.sync(this.pathNormalize(sPath));
     }
 
+
+    upFileName(sFile){
+        return path.basename(sFile);
+    }
+
     upBaseName(sFile, sExt) {
         if (sExt == undefined) {
             sExt = this.upExtName(sFile);

@@ -15,6 +15,9 @@ var MUtilsIo = /** @class */ (function () {
     MUtilsIo.prototype.upFilePath = function (sPath) {
         return glob.sync(this.pathNormalize(sPath));
     };
+    MUtilsIo.prototype.upFileName = function (sFile) {
+        return path.basename(sFile);
+    };
     MUtilsIo.prototype.upBaseName = function (sFile, sExt) {
         if (sExt == undefined) {
             sExt = this.upExtName(sFile);

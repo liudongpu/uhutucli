@@ -258,6 +258,25 @@ class PlugProcess {
                     CommonUtil.utilsIo.writeFile(oSet.targetPath, sNewContent);
 
                     break;
+                //复制文件夹 并且进行config的替换
+                case 153304:
+                    {
+
+
+                       let aDir:string[]= CommonUtil.utilsIo.listDir(oSet.filePath);
+
+                       aDir.forEach(fItem=>{
+                        let sContent = CommonUtil.utilsIo.readFile(fItem);
+                        let sNewContent = LoadConfig.formatConfigString(sContent, oLocalConfig);
+
+                        let sFileName=CommonUtil.utilsIo.upFileName(fItem);
+
+                        CommonUtil.utilsIo.writeFile(CommonUtil.utilsIo.pathJoin( oSet.targetPath,sFileName), sNewContent);
+                       });
+                    }
+
+
+                    break;
                 default:
                     CommonRoot.logError(930312008, oSet.optType.toString());
                     break;
