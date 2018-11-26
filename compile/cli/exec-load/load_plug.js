@@ -204,13 +204,15 @@ var PlugProcess = /** @class */ (function () {
                 //复制文件夹 并且进行config的替换
                 case 153304:
                     {
-                        var aDir = CommonUtil.utilsIo.listDir(oSet.filePath);
-                        aDir.forEach(function (fItem) {
-                            var sContent = CommonUtil.utilsIo.readFile(fItem);
-                            var sNewContent = LoadConfig.formatConfigString(sContent, oLocalConfig);
-                            var sFileName = CommonUtil.utilsIo.upFileName(fItem);
-                            CommonUtil.utilsIo.writeFile(CommonUtil.utilsIo.pathJoin(oSet.targetPath, sFileName), sNewContent);
-                        });
+                        if (CommonUtil.utilsIo.flagExist(oSet.filePath)) {
+                            var aDir = CommonUtil.utilsIo.listDir(oSet.filePath);
+                            aDir.forEach(function (fItem) {
+                                var sContent = CommonUtil.utilsIo.readFile(fItem);
+                                var sNewContent = LoadConfig.formatConfigString(sContent, oLocalConfig);
+                                var sFileName = CommonUtil.utilsIo.upFileName(fItem);
+                                CommonUtil.utilsIo.writeFile(CommonUtil.utilsIo.pathJoin(oSet.targetPath, sFileName), sNewContent);
+                            });
+                        }
                     }
                     break;
                 //异步模式复制文件夹 文件存在则不复制
