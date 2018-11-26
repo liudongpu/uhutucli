@@ -38,6 +38,7 @@ const ScreenTab = TabNavigator({
   <% out.tabItems.forEach((fTabItem)=>{ %>
   <%= fTabItem.tabName %>: {
     screen: <%= fTabItem.screenName %>,
+    /*
     navigationOptions : {
      
       tabBarIcon: ({ bFlagForce,tintColor }) => (
@@ -45,10 +46,28 @@ const ScreenTab = TabNavigator({
       ),
    
   }
+  */
   },
+ 
   <% }) %>
   
 }, {
+  navigationOptions: ({ navigation }) => ({
+    tabBarIcon: ({ focused, tintColor }) => {
+      const { routeName } = navigation.state;
+      let iconName;
+      switch(routeName){
+      <% out.tabItems.forEach((fTabItem)=>{ %>
+        case "<%= fTabItem.tabName %>":
+        iconName = `<%= fTabItem.iconName %>`;
+        break;
+        <% }) %>
+      }
+      // You can return any component that you like here! We usually use an
+      // icon component from react-native-vector-icons
+      return <PlusItemIcon pName={iconName} style={[styles.layout_tab_normal_icon,{color:tintColor}]} />;
+    },
+  }),
   tabBarOptions: {
     <%- out.tabOptions.join('\n') %>
     
