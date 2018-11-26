@@ -60,7 +60,8 @@
         "name": "react_note_plug_top_ginkgo_build_release",
         "filePath": "[@config:file.reactAndroidWork]/app/build.gradle",
         "contentInfo": [
-          "            manifestPlaceholders = [ginkgo_fest_app_icon: \"@mipmap/product_logo\"]"
+          "            manifestPlaceholders = [ginkgo_fest_app_icon: \"@mipmap/product_logo\"]",
+          "            signingConfig signingConfigs.release"
         ],
         "noteType": 1,
         "withText": "release {"
