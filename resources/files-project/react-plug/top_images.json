@@ -53,14 +53,6 @@
         "targetPath": "[@config:file.reactAndroidWork]/app/src/main/res/mipmap-xxxhdpi/"
 
       }
-    },{
-      "exec": "baseFileOption",
-      "set": {
-        "optType": 153305,
-        "filePath": "[@config:define.devPath]/ufiles/android-logo/demos/",
-        "targetPath": "[@config:file.reactAndroidWork]/app/src/main/res/demos/"
-
-      }
     }
   ],
   "ios":
