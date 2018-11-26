@@ -8,6 +8,7 @@
 
 #import "MiniappManagerBridge.h"
 #import <ILiveSDK/ILiveSDK.h>
+#import <GinkgoIosCore/UpdateCheck.h>
 
 @implementation MiniappManagerBridge : NSObject
 RCT_EXPORT_MODULE();
@@ -107,7 +108,9 @@ RCT_REMAP_METHOD(sendNativePromise,type:(NSString *)sType param:(NSString *)sJso
             //NSString *sysVersion = [[UIDevice currentDevice] systemVersion]; //获取系统版本 例如：9.2
             //NSString *deviceUUID = [[[UIDevice currentDevice] identifierForVendor] UUIDString]; //获取设备唯一标识符 例如：FBF2306E-A0D8-4F4B-BDED-9333B627D3E6
             
-            dic=[NSDictionary dictionaryWithObjectsAndKeys:@"ios",@"systemType",[[UIDevice currentDevice] systemVersion],@"systemVersion",    [[UIDevice currentDevice] systemName],@"systemModel",@"apple",@"deviceBrand",nil];
+            UpdateCheck *updateCheck=[UpdateCheck new];
+
+            dic=[NSDictionary dictionaryWithObjectsAndKeys:@"ios",@"systemType",[updateCheck upCurrentVersion],@"appBundleVersion",[[UIDevice currentDevice] systemVersion],@"systemVersion",    [[UIDevice currentDevice] systemName],@"systemModel",@"apple",@"deviceBrand",nil];
         }
             break;
         default:{
