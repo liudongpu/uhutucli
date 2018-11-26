@@ -1,3 +1,7 @@
+##此文件已作废  迁移到rn-docs目录下
+
+
+
 ## 打包发布
 
 * android打包 cd ./react[@config:project.projectName]/android && ./gradlew assembleRelease
