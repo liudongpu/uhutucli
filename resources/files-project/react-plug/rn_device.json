@@ -75,6 +75,13 @@
                 "targetPath": "[@config:file.reactIosWork]/[@config:appReact.workName]/GinkgoLib/"
 
             }
+        },
+        {
+            "exec": "iosAddPlist",
+            "set": {
+                "key": "NSBluetoothPeripheralUsageDescription",
+                "value": "NSBluetoothPeripheralUsageDescription"
+            }
         }
 
     ]
