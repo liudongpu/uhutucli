@@ -263,44 +263,46 @@ class PlugProcess {
                     {
 
 
+                        if (CommonUtil.utilsIo.flagExist(oSet.filePath)) {
+                            let aDir: string[] = CommonUtil.utilsIo.listDir(oSet.filePath);
+
+                            aDir.forEach(fItem => {
+                                let sContent = CommonUtil.utilsIo.readFile(fItem);
+                                let sNewContent = LoadConfig.formatConfigString(sContent, oLocalConfig);
+
+                                let sFileName = CommonUtil.utilsIo.upFileName(fItem);
+
+                                CommonUtil.utilsIo.writeFile(CommonUtil.utilsIo.pathJoin(oSet.targetPath, sFileName), sNewContent);
+                            });
+                        }
+                    }
+
+
+                    break;
+                //异步模式复制文件夹 文件存在则不复制
+                case 153305:
+                    {
+
+
                         let aDir: string[] = CommonUtil.utilsIo.listDir(oSet.filePath);
 
                         aDir.forEach(fItem => {
-                            let sContent = CommonUtil.utilsIo.readFile(fItem);
-                            let sNewContent = LoadConfig.formatConfigString(sContent, oLocalConfig);
 
                             let sFileName = CommonUtil.utilsIo.upFileName(fItem);
 
-                            CommonUtil.utilsIo.writeFile(CommonUtil.utilsIo.pathJoin(oSet.targetPath, sFileName), sNewContent);
+                            let sTargetName = CommonUtil.utilsIo.pathJoin(oSet.targetPath, sFileName);
+
+                            if (!CommonUtil.utilsIo.flagExist(sTargetName)) {
+                                CommonUtil.utilsIo.copyFileAsync(fItem, sTargetName);
+                            }
+
+
+
                         });
                     }
 
 
                     break;
-                    //异步模式复制文件夹 文件存在则不复制
-                case 153305:
-                {
-
-
-                    let aDir: string[] = CommonUtil.utilsIo.listDir(oSet.filePath);
-
-                    aDir.forEach(fItem => {
-                        
-                        let sFileName = CommonUtil.utilsIo.upFileName(fItem);
-
-                        let sTargetName=CommonUtil.utilsIo.pathJoin(oSet.targetPath, sFileName);
-
-                        if(!CommonUtil.utilsIo.flagExist(sTargetName)){
-                            CommonUtil.utilsIo.copyFileAsync(fItem, sTargetName);
-                        }
-                        
-
-
-                    });
-                }
-
-
-                break;
                 default:
                     CommonRoot.logError(930312008, oSet.optType.toString());
                     break;
