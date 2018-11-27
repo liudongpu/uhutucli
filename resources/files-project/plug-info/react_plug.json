@@ -51,6 +51,11 @@
         "version": "1.5.1"
     },
 
+    "rn_tcloud_push": {
+        "name": "rn-tcloud-push",
+        "json": "[@config:file.reactPlugPath]/rn_tcloud_push.json"
+    },
+
     "code_push": {
         "name": "react-native-code-push",
         "version": "5.0.0-beta",

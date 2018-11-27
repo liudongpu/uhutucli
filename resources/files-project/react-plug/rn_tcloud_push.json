@@ -1,0 +1,64 @@
+{
+
+
+  "android": [
+
+    {
+      "exec": "baseFileContent",
+      "set": {
+        "name": "react_note_plug_rn_push_tcloud_gradle_compile",
+        "filePath": "[@config:file.reactAndroidWork]/app/build.gradle",
+        "contentInfo": [
+          "    compile 'com.tencent.tac:tac-core:1.3.+'",
+          "    compile ('com.tencent.tac:tac-messaging:1.3.+')",
+          "    {",
+          "        exclude group:'com.tencent.wup', module: 'wup'",
+          "    }"
+        ],
+        "noteType": 1,
+        "withText": "dependencies {"
+
+      }
+    },
+    {
+      "exec": "baseFileContent",
+      "set": {
+        "name": "react_note_plug_rn_push_tcloud_gradle_apply",
+        "filePath": "[@config:file.reactAndroidWork]/app/build.gradle",
+        "contentInfo": [
+          "apply plugin: 'com.tencent.tac.services'"
+        ],
+        "noteType": 1,
+        "withText": ""
+
+      }
+    },
+    {
+      "exec": "baseFileContent",
+      "set": {
+        "name": "react_note_plug_rn_push_tcloud_build_maven",
+        "filePath": "[@config:file.reactAndroidWork]/build.gradle",
+        "contentInfo": ["        classpath 'com.tencent.tac:tac-services-plugin:1.3.+'"
+        ],
+        "noteType": 1,
+        "withText": "dependencies {"
+
+      }
+    },
+    {
+      "exec": "baseFileOption",
+      "set": {
+        "optType": 153304,
+        "filePath": "[@config:define.devPath]/ufiles/android-push/",
+        "targetPath": "[@config:file.reactAndroidWork]/app/"
+
+      }
+    }
+
+
+  ],
+  "ios": [
+
+  ]
+
+}

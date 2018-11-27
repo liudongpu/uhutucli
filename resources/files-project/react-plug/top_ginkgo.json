@@ -45,7 +45,7 @@
         "filePath": "[@config:file.reactAndroidWork]/app/build.gradle",
         "contentInfo": [
           "        debug {",
-          "            applicationIdSuffix \".localdebug\"",
+          
           
           "        }"
         ],
