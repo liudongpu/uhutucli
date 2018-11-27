@@ -22,7 +22,8 @@ var currentConfig = {
     },
     inc: {
         projectPage: "pages",
-        projectStatic: "statics"
+        projectStatic: "statics",
+        rnVersion: "0.57.5"
     },
     appReact: {
         appType: "react",

@@ -31,7 +31,14 @@ class MmoduleInstall {
      */
     checkWork(oLocalConfig: AimLocal.IAimLocalConfig) {
         if (!CommonUtil.utilsIo.flagExist(oLocalConfig.appReact.workName)) {
-            CommonUtil.utilsHelper.spawnSync("react-native", ["init", oLocalConfig.appReact.workName], { cwd: oLocalConfig.define.workSpace });
+
+
+            let sVersionSet="";
+            if(oLocalConfig.inc.rnVersion){
+                sVersionSet="--version "+oLocalConfig.inc.rnVersion;
+            }
+
+            CommonUtil.utilsHelper.spawnSync("react-native", ["init", oLocalConfig.appReact.workName,sVersionSet], { cwd: oLocalConfig.define.workSpace });
         }
         else {
             CommonRoot.logDebug(970312003, oLocalConfig.appReact.workName);

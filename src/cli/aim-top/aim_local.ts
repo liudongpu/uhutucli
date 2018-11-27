@@ -283,6 +283,11 @@ export interface IAimLocalNexusInc {
      */
     projectStatic: string
 
+    /**
+     * rn的版本号
+     */
+    rnVersion?:string
+
 }
 
 
