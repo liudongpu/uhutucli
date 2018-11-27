@@ -35,10 +35,11 @@ class MmoduleInstall {
 
             let sVersionSet="";
             if(oLocalConfig.inc.rnVersion){
-                sVersionSet="--version "+oLocalConfig.inc.rnVersion;
+                sVersionSet=oLocalConfig.inc.rnVersion;
             }
+           
 
-            CommonUtil.utilsHelper.spawnSync("react-native", ["init", oLocalConfig.appReact.workName,sVersionSet], { cwd: oLocalConfig.define.workSpace });
+            CommonUtil.utilsHelper.spawnSync("react-native", ["init", oLocalConfig.appReact.workName,"--version",sVersionSet], { cwd: oLocalConfig.define.workSpace });
         }
         else {
             CommonRoot.logDebug(970312003, oLocalConfig.appReact.workName);
