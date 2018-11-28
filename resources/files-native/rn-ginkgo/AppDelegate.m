@@ -12,7 +12,9 @@
 
 #import <GinkgoIosVideo/VideoRoomView.h>
 #import <GinkgoIosCore/UpdateCheck.h>
-
+#import <TACCore/TACCore.h>
+#import <TACMessaging/TACMessaging.h>
+#import <GinkgoIosCore/GlobalHelper.h>
 
 
 @implementation AppDelegate
@@ -76,7 +78,28 @@
   
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+
+
+  TACApplicationOptions* options = [TACApplicationOptions defaultApplicationOptions];
+  [TACApplication configurateWithOptions:options];
+
   return YES;
+}
+
+- (void) application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSDictionary *)userInfo
+{
+
+  NSString *token=[[TACMessagingService defaultService].token deviceTokenString];
+  
+  if(token!=nil){
+    NSLog(@"pushNoticeToken %@",token);
+    [[GlobalHelper new] inStorageValue:token withKey:@"PushNoticeToken"];
+  }
+  else{
+    NSLog(@"pushNoticeToken 没有获取到推送token");
+  }
+  
+  
 }
 
 

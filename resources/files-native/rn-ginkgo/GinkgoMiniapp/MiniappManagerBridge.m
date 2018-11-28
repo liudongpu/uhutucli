@@ -98,7 +98,7 @@ RCT_REMAP_METHOD(sendNativePromise,type:(NSString *)sType param:(NSString *)sJso
     switch (index) {
              case 0:
         {
-            //dic=[NSDictionary dictionaryWithObjectsAndKeys:ICK_TOKEN,@"token", nil];
+            dic=[NSDictionary dictionaryWithObjectsAndKeys:[[GlobalHelper new] upStorageValue:@"PushNoticeToken"],@"token", nil];
         }
             
             break;
