@@ -58,7 +58,8 @@ var PlugProcess = /** @class */ (function () {
                 }
             }
             if (bFlagInstall) {
-                CommonUtil.utilsHelper.spawnSync("pod", ['install'], { cwd: CommonUtil.utilsIo.pathJoin(oLocalConfig.appReact.workPath, "ios") });
+                //这里注销掉自动执行install
+                //CommonUtil.utilsHelper.spawnSync("pod", ['install'], { cwd: CommonUtil.utilsIo.pathJoin(oLocalConfig.appReact.workPath, "ios") });
             }
         }
         return true;
