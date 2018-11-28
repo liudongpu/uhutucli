@@ -8,6 +8,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.google.gson.Gson;
+import com.uhutu.ginkgo.ginkgocore.upgrade.SharedPreferencesHelper;
 import com.uhutu.ginkgo.ginkgovideo.video.VideoMainActivity;
 import com.uhutu.ginkgo.ginkgocore.upgrade.UpdateCheck;
 import java.util.HashMap;
@@ -96,7 +97,7 @@ public class MiniappManagerBridge extends ReactContextBaseJavaModule {
 
             switch (sType){
                 case "nativePromiseToken": {
-                    map.put("token", "");
+                    map.put("token",new SharedPreferencesHelper(getCurrentActivity()).upValue("pushNoticeToken"));
                 }
                     break;
                 case "nativePromiseInfo": {

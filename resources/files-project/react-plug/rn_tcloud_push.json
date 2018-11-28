@@ -53,6 +53,32 @@
         "targetPath": "[@config:file.reactAndroidWork]/app/"
 
       }
+    },
+    {
+      "exec": "baseFileOption",
+      "set": {
+        "optType": 153304,
+        "filePath": "[@config:define.resourcePath]/files-native/rn-tcloud-push/push/",
+        "targetPath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/push/"
+
+      }
+    },
+    {
+      "exec": "baseFileContent",
+      "set": {
+        "name": "react_note_plug_rn_push_tcloud_mainfest_reveiver",
+        "filePath": "[@config:file.reactAndroidWork]/app/src/main/AndroidManifest.xml",
+        "contentInfo": [
+          "      <receiver android:name=\".push.PushNoticeReciver\">",
+          "            <intent-filter>",
+          "                  <action android:name=\"com.tencent.tac.messaging.action.CALLBACK\" />",
+          "            </intent-filter>",
+          "      </receiver>"
+        ],
+        "noteType": 4,
+        "withText": "\\<\\/activity\\>"
+
+      }
     }
 
 
