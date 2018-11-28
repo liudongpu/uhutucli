@@ -84,7 +84,16 @@
 
   ],
   "ios": [
+    
+    {
+      "exec": "baseFileOption",
+      "set": {
+        "optType": 153304,
+        "filePath": "[@config:define.devPath]/ufiles/ios-push/",
+        "targetPath": "[@config:file.reactIosWork]/[@config:appReact.workName]/"
 
+      }
+    }
   ]
 
 }

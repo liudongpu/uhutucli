@@ -241,7 +241,7 @@
     {
       "exec": "baseFileOption",
       "set": {
-        "optType": 153302,
+        "optType": 153304,
         "filePath": "[@config:define.resourcePath]/files-native/rn-ginkgo/GinkgoMiniapp/",
         "targetPath": "[@config:file.reactIosWork]/[@config:appReact.workName]/GinkgoMiniapp/"
 
@@ -250,9 +250,9 @@
     {
       "exec": "baseFileOption",
       "set": {
-        "optType": 153304,
-        "filePath": "[@config:define.resourcePath]/files-native/rn-ginkgo/GinkgoMiniapp/",
-        "targetPath": "[@config:file.reactIosWork]/[@config:appReact.workName]/GinkgoMiniapp/"
+        "optType": 153302,
+        "filePath": "[@config:define.resourcePath]/files-native/rn-ginkgo/Podfile",
+        "targetPath": "[@config:file.reactIosWork]/Podfile"
 
       }
     },

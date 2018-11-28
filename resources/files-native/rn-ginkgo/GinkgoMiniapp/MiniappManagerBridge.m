@@ -9,6 +9,7 @@
 #import "MiniappManagerBridge.h"
 #import <ILiveSDK/ILiveSDK.h>
 #import <GinkgoIosCore/UpdateCheck.h>
+#import <GinkgoIosCore/GlobalHelper.h>
 
 @implementation MiniappManagerBridge : NSObject
 RCT_EXPORT_MODULE();

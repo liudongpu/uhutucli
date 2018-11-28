@@ -36,7 +36,13 @@ zip -r '../abc/ios-'`date +%y%m%d` ./
 * 修改 General > Deployment Info > Devices 调整为Universel   
 * 修改 General > Deployment Info > Requires full screen 勾上选择
 * 修改 Build Settings > PRODUCT_BUNDLE_IDENTIFIER 调整为[@config:project.domainSpace]
+* 添加Ginkgo系列文件夹进项目目录
 
+# iOS推送配置
+
+* 添加根目录下的tac_services_configurations.plist文件进项目目录
+* Target > Capabilities > Background Modes > Remote notifications 勾选
+* Target > Capabilities > Push Notifications 选择
 
 # Android
 
