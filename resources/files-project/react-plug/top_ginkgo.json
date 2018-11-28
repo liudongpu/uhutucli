@@ -239,14 +239,11 @@
   "ios": [
 
     {
-      "exec": "iosInitPod",
+      "exec": "baseFileOption",
       "set": {
-
-        "contentInfo": [
-          "pod 'GinkgoIosCore','1.1.4'",
-          "pod 'GinkgoIosVideo','1.1.0'"
-        ],
-        "name": "react_note_plug_top_ginkgo_pod"
+        "optType": 153302,
+        "filePath": "[@config:define.resourcePath]/files-native/rn-ginkgo/GinkgoMiniapp/",
+        "targetPath": "[@config:file.reactIosWork]/[@config:appReact.workName]/GinkgoMiniapp/"
 
       }
     },

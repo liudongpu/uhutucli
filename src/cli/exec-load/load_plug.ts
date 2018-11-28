@@ -252,12 +252,24 @@ class PlugProcess {
                     CommonUtil.utilsIo.copyFileAsync(oSet.sourcePath, oSet.targetPath);
 
                     break;
+                //复制文件 只有当目标文件存在时才替换，高端操作
+                case 153302:
+                    {
+                        if (CommonUtil.utilsIo.flagExist(oSet.targetPath)) {
+                            let sContent = CommonUtil.utilsIo.readFile(oSet.filePath);
+                            let sNewContent = LoadConfig.formatConfigString(sContent, oLocalConfig);
+                            CommonUtil.utilsIo.writeFile(oSet.targetPath, sNewContent);
+                        }
+                    }
+
+                    break;
                 //复制文件 并且进行config的替换
                 case 153303:
-                    let sContent = CommonUtil.utilsIo.readFile(oSet.filePath);
-                    let sNewContent = LoadConfig.formatConfigString(sContent, oLocalConfig);
-                    CommonUtil.utilsIo.writeFile(oSet.targetPath, sNewContent);
-
+                    {
+                        let sContent = CommonUtil.utilsIo.readFile(oSet.filePath);
+                        let sNewContent = LoadConfig.formatConfigString(sContent, oLocalConfig);
+                        CommonUtil.utilsIo.writeFile(oSet.targetPath, sNewContent);
+                    }
                     break;
                 //复制文件夹 并且进行config的替换
                 case 153304:
