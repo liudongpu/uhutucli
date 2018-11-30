@@ -15,7 +15,8 @@
         "react*/project/",
         "vue*/pages/",
         "yarn.lock",
-        "package-lock.json"
+        "package-lock.json",
+        "react*/android/app/bugly/"
         ]
       }
     }
