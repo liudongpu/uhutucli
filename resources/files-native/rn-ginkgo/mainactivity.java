@@ -3,13 +3,14 @@
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        new GlobalCheck().init(this);
 
         UpdateCheck updateCheck=new UpdateCheck();
 
         updateCheck.check(this);
 
 
-        new GlobalCheck().init(this);
+        
 
 
         if (this != null) {
