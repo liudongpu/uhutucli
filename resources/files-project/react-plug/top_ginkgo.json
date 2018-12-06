@@ -137,7 +137,9 @@
         "contentInfo": ["import com.uhutu.ginkgo.ginkgocore.common.GlobalBase;",
           "import com.uhutu.ginkgo.ginkgocore.upgrade.UpdateCheck;",
 
-          "import com.[@config:appReact.workName].miniapp.MiniappManagerPackage;"
+          "import com.[@config:appReact.workName].miniapp.MiniappManagerPackage;",
+          "import android.content.Context;",
+          "import android.support.multidex.MultiDex;"
         ],
         "noteType": 1,
         "withText": "import android.app.Application;"
@@ -167,6 +169,22 @@
         ],
         "noteType": 1,
         "withText": "new ReactNativeHost\\(this\\) \\{"
+
+      }
+    },
+    {
+      "exec": "baseFileContent",
+      "set": {
+        "name": "react_note_plug_top_ginkgo_application_multidex",
+        "filePath": "[@config:file.reactAndroidWork]/app/src/main/java/com/[@config:appReact.workName]/MainApplication.java",
+        "contentInfo": ["    @Override",
+          "    protected void attachBaseContext(Context base) {",
+          "      super.attachBaseContext(base);",
+          "      MultiDex.install(base);",
+          "    }"
+        ],
+        "noteType": 1,
+        "withText": "  \\}\\;$"
 
       }
     },
