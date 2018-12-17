@@ -11,6 +11,7 @@ import com.google.gson.Gson;
 import com.uhutu.ginkgo.ginkgocore.upgrade.SharedPreferencesHelper;
 import com.uhutu.ginkgo.ginkgovideo.video.VideoMainActivity;
 import com.uhutu.ginkgo.ginkgocore.upgrade.UpdateCheck;
+import com.uhutu.ginkgo.ginkgocore.common.GlobalBase;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -105,6 +106,7 @@ public class MiniappManagerBridge extends ReactContextBaseJavaModule {
                    map.put("systemVersion",android.os.Build.VERSION.RELEASE);
                    map.put("systemModel",android.os.Build.MODEL);
                    map.put("deviceBrand",android.os.Build.BRAND);
+                   map.put("appId",GlobalBase.getInstance().upConfig().getAppApplicaitionId());
                    map.put("appBundleVersion",new UpdateCheck().upCurrentVersion(getCurrentActivity()));
                 }
                 break;

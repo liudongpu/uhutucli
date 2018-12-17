@@ -111,7 +111,7 @@ RCT_REMAP_METHOD(sendNativePromise,type:(NSString *)sType param:(NSString *)sJso
             
             UpdateCheck *updateCheck=[UpdateCheck new];
 
-            dic=[NSDictionary dictionaryWithObjectsAndKeys:@"ios",@"systemType",[updateCheck upCurrentVersion],@"appBundleVersion",[[UIDevice currentDevice] systemVersion],@"systemVersion",    [[UIDevice currentDevice] systemName],@"systemModel",@"apple",@"deviceBrand",nil];
+            dic=[NSDictionary dictionaryWithObjectsAndKeys:@"ios",@"systemType",[[NSBundle mainBundle]bundleIdentifier],@"appId",[updateCheck upCurrentVersion],@"appBundleVersion",[[UIDevice currentDevice] systemVersion],@"systemVersion",    [[UIDevice currentDevice] systemName],@"systemModel",@"apple",@"deviceBrand",nil];
         }
             break;
         default:{
