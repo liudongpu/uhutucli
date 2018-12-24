@@ -20,8 +20,8 @@
         "name": "react_note_plug_top_ginkgo_import",
         "filePath": "[@config:file.reactAndroidWork]/app/build.gradle",
         "contentInfo": [
-          "    implementation 'com.uhutu.ginkgo:ginkgocore:1.1.4'",
-          "    implementation 'com.uhutu.ginkgo:ginkgovideo:1.1.4'"
+          "    implementation 'com.uhutu.ginkgo:ginkgocore:1.2.0'",
+          "    implementation 'com.uhutu.ginkgo:ginkgovideo:1.2.4'"
         ],
         "noteType": 1,
         "withText": "dependencies {"
