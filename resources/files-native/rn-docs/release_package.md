@@ -37,6 +37,7 @@ zip -r '../abc/ios-'`date +%y%m%d` ./
 * 修改 General > Deployment Info > Requires full screen 勾上选择
 * 修改 Build Settings > PRODUCT_BUNDLE_IDENTIFIER 调整为[@config:project.domainSpace]
 * 添加Ginkgo系列文件夹进项目目录
+* Info.plist 增加ITSAppUsesNonExemptEncryption  false
 
 # iOS推送配置
 
