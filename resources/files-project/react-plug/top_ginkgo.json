@@ -21,7 +21,7 @@
         "filePath": "[@config:file.reactAndroidWork]/app/build.gradle",
         "contentInfo": [
           "    implementation 'com.uhutu.ginkgo:ginkgocore:1.2.0'",
-          "    implementation 'com.uhutu.ginkgo:ginkgovideo:1.2.4'"
+          "    implementation 'com.uhutu.ginkgo:ginkgovideo:1.2.6'"
         ],
         "noteType": 1,
         "withText": "dependencies {"
