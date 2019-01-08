@@ -6,7 +6,7 @@
 
 ## 安装  
 * 安装 [Node.js](https://nodejs.org/)  
-* 安装react-native `npm install -g react-native`
+* 安装react-native `npm install -g react-native-cli`
 * 然后执行：  
 
 ```bash
