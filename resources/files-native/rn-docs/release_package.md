@@ -51,5 +51,9 @@ zip -r '../abc/ios-'`date +%y%m%d` ./
 * AndroidManifest > application 添加属性 tools:replace="android:allowBackup"
 
 
+#增加支付支持
+
+https://github.com/puti94/react-native-puti-pay
+
 
 
