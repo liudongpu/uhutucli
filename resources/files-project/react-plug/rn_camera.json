@@ -33,6 +33,20 @@
                 "key": "NSPhotoLibraryUsageDescription",
                 "value": "NSPhotoLibraryUsageDescription"
             }
+        },
+        {
+            "exec": "iosAddPlist",
+            "set": {
+                "key": "NSLocationAlwaysUsageDescription",
+                "value": "NSLocationAlwaysUsageDescription"
+            }
+        },
+        {
+            "exec": "iosAddPlist",
+            "set": {
+                "key": "NSLocationWhenInUseUsageDescription",
+                "value": "NSLocationWhenInUseUsageDescription"
+            }
         }
     ]
 
