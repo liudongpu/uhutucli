@@ -17,35 +17,42 @@
             "exec": "iosAddPlist",
             "set": {
                 "key": "NSMicrophoneUsageDescription",
-                "value": "NSMicrophoneUsageDescription"
+                "value": "录制音频文件/语音识别"
             }
         },
         {
             "exec": "iosAddPlist",
             "set": {
                 "key": "NSCameraUsageDescription",
-                "value": "NSCameraUsageDescription"
+                "value": "拍照/摄像/扫描二维码"
             }
         },
         {
             "exec": "iosAddPlist",
             "set": {
                 "key": "NSPhotoLibraryUsageDescription",
-                "value": "NSPhotoLibraryUsageDescription"
+                "value": "选择图片"
             }
         },
         {
             "exec": "iosAddPlist",
             "set": {
                 "key": "NSLocationAlwaysUsageDescription",
-                "value": "NSLocationAlwaysUsageDescription"
+                "value": "用户当前位置"
+            }
+        },
+        {
+            "exec": "iosAddPlist",
+            "set": {
+                "key": "NSPhotoLibraryAddUsageDescription",
+                "value": "保存图片信息"
             }
         },
         {
             "exec": "iosAddPlist",
             "set": {
                 "key": "NSLocationWhenInUseUsageDescription",
-                "value": "NSLocationWhenInUseUsageDescription"
+                "value": "用于导航或路径规划"
             }
         }
     ]
