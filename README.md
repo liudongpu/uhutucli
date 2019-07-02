@@ -45,3 +45,33 @@ npm install -g uhutu-cli
 uhutu-cli --build
 ```
 
+
+
+
+### 初始化
+
+# iOS 
+  
+* 更改 Project > Build Settings > Enable bitCode 改为NO
+* 修改 General > Deployment Info > Devices 调整为Universel   
+* 修改 General > Deployment Info > Requires full screen 勾上选择
+* 修改 Build Settings > PRODUCT_BUNDLE_IDENTIFIER 调整为com.uhutu.react.
+* 添加Ginkgo系列文件夹进项目目录
+* Info.plist 增加ITSAppUsesNonExemptEncryption  false
+
+# iOS推送配置
+
+* 添加根目录下的tac_services_configurations.plist文件进项目目录
+* Target > Capabilities > Background Modes > Remote notifications 勾选
+* Target > Capabilities > Push Notifications 选择
+
+# Android
+
+* AndroidManifest > manifest添加属性 xmlns:tools="http://schemas.android.com/tools"
+* AndroidManifest > application 添加属性 tools:replace="android:allowBackup"
+
+
+#增加支付支持
+
+https://github.com/puti94/react-native-puti-pay
+
