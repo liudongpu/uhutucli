@@ -125,6 +125,10 @@
         "version": "0.26.10",
         "json": "[@config:file.reactPlugPath]/rn_image_picker.json"
     },
+    "rn_image_viewer": {
+        "name": "react-native-image-zoom-viewer",
+        "version": "2.2.6"
+    },
 
     "rn_date_picker": {
         "name": "react-native-datepicker",
