@@ -9,7 +9,7 @@
 
         updateCheck.check(this);
 
-
+        new FullSum().check(this);
         
 
 

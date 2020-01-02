@@ -20,7 +20,7 @@
         "name": "react_note_plug_top_ginkgo_import",
         "filePath": "[@config:file.reactAndroidWork]/app/build.gradle",
         "contentInfo": [
-          "    implementation 'com.uhutu.ginkgo:ginkgocore:1.2.0'",
+          "    implementation 'com.uhutu.ginkgo:ginkgocore:1.3.0'",
           "    implementation 'com.uhutu.ginkgo:ginkgovideo:1.2.6'"
         ],
         "noteType": 1,
@@ -210,6 +210,7 @@
           "import android.widget.TextView;",
           "import com.uhutu.ginkgo.ginkgocore.common.GlobalCheck;",
           "import com.uhutu.ginkgo.ginkgocore.upgrade.UpdateCheck;",
+          "import com.uhutu.ginkgo.ginkgocore.upgrade.FullSum;",
           "import com.uhutu.ginkgo.ginkgovideo.video.VideoMainActivity;",
           "import com.[@config:appReact.workName].miniapp.MiniappManagerPackage;"
 
